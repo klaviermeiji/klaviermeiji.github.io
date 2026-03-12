@@ -223,7 +223,6 @@ main {
 .normal-list li {
   list-style: none;
   padding: 10px 0;
-  margin-bottom: 8px;
   border-bottom: 1px solid #ccc;
   line-height: 1.7;
 }
@@ -362,6 +361,10 @@ footer {
 
 .sp-only {
   display: none;
+}
+
+.gray {
+  color: #777;
 }
 
 
@@ -574,6 +577,7 @@ footer {
   .site-title {
     font-size: 13px;
   }
+
   .main-nav ul {
     top: 52px;
   }
