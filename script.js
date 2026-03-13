@@ -9,12 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // ====== ▼ モバイルメニュー開閉 ======
     const btn = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.main-nav ul');
+    const icon = document.querySelector('#menu-icon');
 
     if (btn) {
         btn.addEventListener('click', function () {
             const expanded = this.getAttribute('aria-expanded') === 'true';
             this.setAttribute('aria-expanded', String(!expanded));
             nav.classList.toggle('open');
+
+            if (!expanded) {
+                icon.src = "images/close.jpg";
+            } else {
+                icon.src = "images/menu.jpg"; 
+            }
         });
     }
 });

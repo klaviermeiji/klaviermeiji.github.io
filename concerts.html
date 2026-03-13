@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpeg" href="images/icon.JPEG" />
     <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WQCKLP3B3"></script>
+    <script src="analytics.js"></script>
 </head>
 
 <body>
@@ -30,95 +33,88 @@
                 </div>
                 <nav class="main-nav" aria-label="メインナビゲーション">
                     <ul id="nav-list">
-
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">ホーム</a>
                             <div class="nav-sublist">
-                                <p>> KLAVIERとは<br>
-                                    > 東京六大学ピアノ連盟</p>
+                                <a href="index.html#klavier">> KLAVIERとは</a><br>
+                                <a href="index.html#rokuren">> 東京六大学ピアノ連盟</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="concerts.html" class="nav-link active">演奏会情報</a>
                             <div class="nav-sublist">
-                                <p>> 今後の演奏会<br>
-                                    > 過去の演奏会</p>
+                                <a href="concerts.html#after">> 今後の演奏会</a><br>
+                                <a href="concerts.html#before">> 過去の演奏会</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="activities.html" class="nav-link">活動紹介</a>
                             <div class="nav-sublist">
-                                <p>> 演奏会<br>
-                                    > イベント<br>
-                                    > 普段の活動</p>
+                                <a href="activities.html#concert">> 演奏会</a><br>
+                                <a href="activities.html#event">> イベント</a><br>
+                                <a href="activities.html#daily">> 普段の活動</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="join.html" class="nav-link">入会案内</a>
                             <div class="nav-sublist">
-                                <p>> 入会方法<br>
-                                    > 入会金<br>
-                                    > よくある質問</p>
+                                <a href="join.html#howto">> 入会方法</a><br>
+                                <a href="join.html#fee">> 入会金</a><br>
+                                <a href="join.html#question">> よくある質問</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">お問い合わせ</a>
                             <div class="nav-sublist">
-                                <p>> OB・OGの方へ<br>
-                                    > 出演依頼など</p>
+                                <a href="contact.html#obog">> OB・OGの方へ</a><br>
+                                <a href="contact.html#request" </a>> 出演依頼など</a>
                             </div>
                         </li>
-
                     </ul>
                 </nav>
-                <button class="nav-toggle" id="navToggle"><img src="images/toggle.jpg" alt="menu"></button>
+                <button class="nav-toggle" id="navToggle"><img id="menu-icon" src="images/menu.jpg" alt="menu"></button>
             </div>
         </div>
     </header>
+
     <main>
         <section class="about container" aria-labelledby="about-heading">
             <h3 id="about-heading">Concerts</h3>
             <p class="about-ex">ここでは、過去の演奏会の活動報告や、今後の演奏会に関するお知らせを掲載しています。<br>
                 演奏会へのご来場をご希望の方は、SNSのDMにてお気軽にご連絡ください。
             </p>
-
-            <article class="about-block">
-                <h4>今後の演奏会</h4>
+            <article class="about-block" >
+                <h4 id="after" class="anchor">今後の演奏会</h4>
                 <ul class="normal-list">
                     <li>
                         ・<time datetime="2026-03-21">2026/03/21</time>：追い出しコンサート<br>
-                        4年生のみなさんを送り出す演奏会です。
+                        <div class="gray">4年生のみなさんを送り出す演奏会です。</div>
                     </li>
                     <li>
                         ・<time datetime="2026-04-11">2026/04/11</time>&<time
                             datetime="2026-04-18">2026/04/18</time>：新歓演奏会<br>
-                        新入生に向けた演奏会です。
+                        <div class="gray">新入生に向けた演奏会です。</div>
                     </li>
                     <li>
                         ・<time datetime="2026-03-21">2026/05/09</time>：早明合同演奏会<br>
-                        早稲田大学「早大ピアノの会」さんとの合同演奏会です。
+                        <div class="gray">早稲田大学「早大ピアノの会」さんとの合同演奏会です。</div>
                     </li>
                 </ul>
             </article>
-
             <article class="about-block">
-                <h4>過去の演奏会</h4>
+                <h4 id="before" class="anchor">過去の演奏会</h4>
                 <ul class="normal-list">
                     <li>
                         ・<time datetime="2026-03-10">2026/03/10</time>：JMR合同演奏会<br>
-                        上智大学「上智大学ピアノの会」さん、立教大学「立教大学ピアノの会」さんとの合同演奏会です。
+                        <div class="gray">上智大学「上智大学ピアノの会」さん、立教大学「立教大学ピアノの会」さんとの合同演奏会です。</div>
                     </li>
                     <li>
                         ・<time datetime="2026-02-10">2026/02/10</time>：定期演奏会3<br>
-                        3回目の定期演奏会です。
+                        <div class="gray">3回目の定期演奏会です。</div>
                     </li>
                     <li>
                         ・<time datetime="2025-12-26">2025/12/26</time>：定期演奏会2<br>
-                        2回目の定期演奏会です。
+                        <div class="gray">2回目の定期演奏会です。</div>
                     </li>
                 </ul>
                 <div class="instagram-wrapper">

@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpeg" href="images/icon.JPEG" />
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WQCKLP3B3"></script>
+    <script src="analytics.js"></script>
 </head>
 
 <body>
@@ -30,66 +34,60 @@
                 </div>
                 <nav class="main-nav" aria-label="メインナビゲーション">
                     <ul id="nav-list">
-
                         <li class="nav-item">
                             <a href="index.html" class="nav-link active">ホーム</a>
                             <div class="nav-sublist">
-                                <p>> KLAVIERとは<br>
-                                > 東京六大学ピアノ連盟</p>
+                                <a href="index.html#klavier">> KLAVIERとは</a><br>
+                                <a href="index.html#rokuren">> 東京六大学ピアノ連盟</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="concerts.html" class="nav-link">演奏会情報</a>
                             <div class="nav-sublist">
-                                <p>> 今後の演奏会<br>
-                                    > 過去の演奏会</p>
+                                <a href="concerts.html#after">> 今後の演奏会</a><br>
+                                <a href="concerts.html#before">> 過去の演奏会</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="activities.html" class="nav-link">活動紹介</a>
                             <div class="nav-sublist">
-                                <p>> 演奏会<br>
-                                    > イベント<br>
-                                    > 普段の活動</p>
+                                <a href="activities.html#concert">> 演奏会</a><br>
+                                <a href="activities.html#event">> イベント</a><br>
+                                <a href="activities.html#daily">> 普段の活動</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="join.html" class="nav-link">入会案内</a>
                             <div class="nav-sublist">
-                                <p>> 入会方法<br>
-                                    > 入会金<br>
-                                    > よくある質問</p>
+                                <a href="join.html#howto">> 入会方法</a><br>
+                                <a href="join.html#fee">> 入会金</a><br>
+                                <a href="join.html#question">> よくある質問</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">お問い合わせ</a>
                             <div class="nav-sublist">
-                                <p>> OB・OGの方へ<br>
-                                    > 出演依頼など</p>
+                                <a href="contact.html#obog">> OB・OGの方へ</a><br>
+                                <a href="contact.html#request" </a>> 出演依頼など</a>
                             </div>
                         </li>
-
                     </ul>
                 </nav>
-                <button class="nav-toggle" id="navToggle"><img src="images/toggle.jpg" alt="menu"></button>
+                <button class="nav-toggle" id="navToggle"><img id="menu-icon" src="images/menu.jpg" alt="menu"></button>
             </div>
         </div>
     </header>
+
     <section class="hero">
         <h2 class="hero-title">Welcome to Klavier<br><span class="hero-subtitle">The Piano Circle at Meiji
                 University</span></h2>
     </section>
-    <main>
 
+    <main>
         <section class="about container" aria-labelledby="about-heading">
             <h3 id="about-heading">About Us</h3>
-
             <article class="about-block">
-                <h4>KLAVIERとは</h4>
+                <h4 id="klavier" class="anchor">KLAVIERとは</h4>
                 <p>明治大学ピアノの会KLAVIERは、和泉・駿河台キャンパスを拠点に活動する明治大学公認のピアノサークルです。<br>
                     大学からピアノを始めた初心者から、コンクール入賞経験のある上級者まで、幅広いメンバーが在籍しています♪<br>
                     現在は75名が所属しており、男女比はおおよそ1:1です。
@@ -104,9 +102,8 @@
                     </figure>
                 </div>
             </article>
-
             <article class="about-block">
-                <h4>東京六大学ピアノ連盟</h4>
+                <h4 id="rokuren" class="anchor">東京六大学ピアノ連盟</h4>
                 <p>KLAVIERは東京六大学ピアノ連盟（通称「六連」）に所属しています。<br>
                     六連は慶應・上智・東大・明治・立教・早稲田の6大学のピアノサークルで構成される連盟です。<br>
                     当サークルは、六連が主催するすべての演奏会やサロンに参加することができ、参加費もサークルが負担しています。</p>
@@ -115,6 +112,7 @@
             </article>
         </section>
     </main>
+
     <footer>
         <p>© 2026 明治大学ピアノの会KLAVIER. All rights reserved.</p>
     </footer>

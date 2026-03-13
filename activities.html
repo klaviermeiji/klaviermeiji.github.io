@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpeg" href="images/icon.JPEG" />
     <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WQCKLP3B3"></script>
+    <script src="analytics.js"></script>
 </head>
 
 <body>
@@ -30,63 +33,56 @@
                 </div>
                 <nav class="main-nav" aria-label="メインナビゲーション">
                     <ul id="nav-list">
-
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">ホーム</a>
                             <div class="nav-sublist">
-                                <p>> KLAVIERとは<br>
-                                > 東京六大学ピアノ連盟</p>
+                                <a href="index.html#klavier">> KLAVIERとは</a><br>
+                                <a href="index.html#rokuren">> 東京六大学ピアノ連盟</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="concerts.html" class="nav-link">演奏会情報</a>
                             <div class="nav-sublist">
-                                <p>> 今後の演奏会<br>
-                                    > 過去の演奏会</p>
+                                <a href="concerts.html#after">> 今後の演奏会</a><br>
+                                <a href="concerts.html#before">> 過去の演奏会</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="activities.html" class="nav-link active">活動紹介</a>
                             <div class="nav-sublist">
-                                <p>> 演奏会<br>
-                                    > イベント<br>
-                                    > 普段の活動</p>
+                                <a href="activities.html#concert">> 演奏会</a><br>
+                                <a href="activities.html#event">> イベント</a><br>
+                                <a href="activities.html#daily">> 普段の活動</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="join.html" class="nav-link">入会案内</a>
                             <div class="nav-sublist">
-                                <p>> 入会方法<br>
-                                    > 入会金<br>
-                                    > よくある質問</p>
+                                <a href="join.html#howto">> 入会方法</a><br>
+                                <a href="join.html#fee">> 入会金</a><br>
+                                <a href="join.html#question">> よくある質問</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">お問い合わせ</a>
                             <div class="nav-sublist">
-                                <p>> OB・OGの方へ<br>
-                                    > 出演依頼など</p>
+                                <a href="contact.html#obog">> OB・OGの方へ</a><br>
+                                <a href="contact.html#request" </a>> 出演依頼など</a>
                             </div>
                         </li>
-
                     </ul>
                 </nav>
-                <button class="nav-toggle" id="navToggle"><img src="images/toggle.jpg" alt="menu"></button>
+                <button class="nav-toggle" id="navToggle"><img id="menu-icon" src="images/menu.jpg" alt="menu"></button>
             </div>
         </div>
     </header>
 
     <main>
-
         <section class="about container" aria-labelledby="about-heading">
             <h3 id="about-heading">Activities</h3>
             <p class="about-ex">ここでは、演奏会やイベント、普段の活動内容についてご紹介しています。</p>
             <article class="about-block">
-                <h4>演奏会</h4>
+                <h4 id="concert" class="anchor">演奏会</h4>
                 <p>平均して月に1回ほど、演奏会を開催しています。<br>
                     参加はすべて自由で、年会費以外に追加の費用はかかりません。<br>
                     ソロや連弾はもちろん、演奏会によっては二台ピアノや他楽器とのアンサンブルも可能です。<br>
@@ -103,7 +99,7 @@
                 </div>
             </article>
             <article class="about-block">
-                <h4>イベント</h4>
+                <h4 id="event" class="anchor">イベント</h4>
                 <p>演奏会のほかにも、さまざまなイベントを随時開催しています。<br>
                     参加は自由ですが、別途参加費がかかります。<br>
                     豪華な景品が用意されることもあり、サークル員同士の交流を深める良い機会となっています。</p>
@@ -119,7 +115,7 @@
                 </div>
             </article>
             <article class="about-block">
-                <h4>普段の活動</h4>
+                <h4 id="daily" class="anchor">普段の活動</h4>
                 <p>駿河台キャンパスの音練3と、和泉キャンパスの会議室1、LS101にてピアノを弾くことができます。<br>
                     各自が自由に練習を行うほか、みんなでわいわいと話したり、集まって課題に取り組んだりすることもあります。
                 </p>

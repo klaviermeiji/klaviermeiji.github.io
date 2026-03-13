@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpeg" href="images/icon.JPEG" />
     <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WQCKLP3B3"></script>
+    <script src="analytics.js"></script>
 </head>
 
 <body>
@@ -30,69 +33,63 @@
                 </div>
                 <nav class="main-nav" aria-label="メインナビゲーション">
                     <ul id="nav-list">
-
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">ホーム</a>
                             <div class="nav-sublist">
-                                <p>> KLAVIERとは<br>
-                                > 東京六大学ピアノ連盟</p>
+                                <a href="index.html#klavier">> KLAVIERとは</a><br>
+                                <a href="index.html#rokuren">> 東京六大学ピアノ連盟</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="concerts.html" class="nav-link">演奏会情報</a>
                             <div class="nav-sublist">
-                                <p>> 今後の演奏会<br>
-                                    > 過去の演奏会</p>
+                                <a href="concerts.html#after">> 今後の演奏会</a><br>
+                                <a href="concerts.html#before">> 過去の演奏会</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="activities.html" class="nav-link">活動紹介</a>
                             <div class="nav-sublist">
-                                <p>> 演奏会<br>
-                                    > イベント<br>
-                                    > 普段の活動</p>
+                                <a href="activities.html#concert">> 演奏会</a><br>
+                                <a href="activities.html#event">> イベント</a><br>
+                                <a href="activities.html#daily">> 普段の活動</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="join.html" class="nav-link active">入会案内</a>
                             <div class="nav-sublist">
-                                <p>> 入会方法<br>
-                                    > 入会金<br>
-                                    > よくある質問</p>
+                                <a href="join.html#howto">> 入会方法</a><br>
+                                <a href="join.html#fee">> 入会金</a><br>
+                                <a href="join.html#question">> よくある質問</a>
                             </div>
                         </li>
-
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">お問い合わせ</a>
                             <div class="nav-sublist">
-                                <p>> OB・OGの方へ<br>
-                                    > 出演依頼など</p>
+                                <a href="contact.html#obog">> OB・OGの方へ</a><br>
+                                <a href="contact.html#request" </a>> 出演依頼など</a>
                             </div>
                         </li>
-
                     </ul>
                 </nav>
-                <button class="nav-toggle" id="navToggle"><img src="images/toggle.jpg" alt="menu"></button>
+                <button class="nav-toggle" id="navToggle"><img id="menu-icon" src="images/menu.jpg" alt="menu"></button>
             </div>
         </div>
     </header>
+
     <main>
         <section class="about container" aria-labelledby="about-heading">
             <h3 id="about-heading">Join Us</h3>
             <p class="about-ex">ここでは、入会方法や会費、入会に関する情報についてご案内します。</p>
             <article class="about-block">
-                <h4>入会方法</h4>
+                <h4 id="howto" class="anchor">入会方法</h4>
                 <p> KLAVIER公式のInstagramのDMにて、入会希望の旨をお伝えください。
                     入会前に見学することも可能です。
                     新歓時期にはSNSで新入生に向けた情報を発信しておりますので、ぜひそちらもあわせてご覧ください。
                 </p>
             </article>
-
             <article class="about-block">
-                <h4>入会金</h4>
+                <h4 id="fee" class="anchor">入会金</h4>
                 <ul class="normal-list">
                     <li>
                         ・4月～10月に入会の場合<br>
@@ -109,9 +106,8 @@
                 </p>
             </article>
             <article class="about-block">
-                <h4>よくある質問</h4>
+                <h4 id="question" class="anchor">よくある質問</h4>
                 <ul class="faq-list">
-
                     <li class="q-list">
                         ピアノ初心者でも入会できますか？
                     </li>
@@ -119,7 +115,6 @@
                         はい、可能です。<br>
                         大学からピアノを始めたメンバーも在籍しています。
                     </li>
-
                     <li class="q-list">
                         何年生からでも入会できますか？
                     </li>
@@ -127,7 +122,6 @@
                         学年を問わずご入会いただけます。<br>
                         途中入会も歓迎しております。
                     </li>
-
                     <li class="q-list">
                         生田・中野キャンパスの所属学部なのですが、入会できますか？
                     </li>
@@ -135,14 +129,12 @@
                         はい、可能です。<br>
                         現在も生田・中野キャンパス所属のサークル員が約10名在籍しています。
                     </li>
-
                     <li class="q-list">
                         他大学の学生なのですが、入会できますか？
                     </li>
                     <li class="a-list">
                         他大学の方のご入会はお受けしておりません。
                     </li>
-
                     <li class="q-list">
                         活動日はいつですか？
                     </li>
@@ -150,7 +142,6 @@
                         決まった活動日はございません。<br>
                         演奏会への出演やサークル室の利用も、ご自身のペースで活動していただけます。
                     </li>
-
                     <li class="q-list">
                         クラシックではなくポップス／ジャズが弾きたいのですが大丈夫ですか？
                     </li>
@@ -159,14 +150,12 @@
                         クラシックを弾くサークル員が多いですが、ポップスやジャズを演奏する方も在籍しています。<br>
                         編曲に力を入れている方もいます。
                     </li>
-
                     <li class="q-list">
                         演奏会の出演費用はいくらですか？
                     </li>
                     <li class="a-list">
                         年会費をお支払いいただいている方は、演奏会出演にあたり追加費用はかかりません。
                     </li>
-
                     <li class="q-list">
                         サークル室はどのくらいの頻度で開いていますか？
                     </li>
@@ -181,7 +170,6 @@
                     <li class="a-list">
                         会議室1にはアップライトピアノと電子ピアノが1台ずつ、LS101にはグランドピアノが1台、音練3にはグランドピアノとアップライトピアノが1台ずつございます。
                     </li>
-
                 </ul>
             </article>
         </section>
