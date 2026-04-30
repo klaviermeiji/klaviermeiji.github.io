@@ -5,7 +5,6 @@ window.onload = () => {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-
     // ====== ▼ モバイルメニュー開閉 ======
     const btn = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.main-nav ul');
@@ -28,16 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // 演奏会情報
 const concerts = [
-    {
-        title: "定期演奏会3",
-        date: "2026-02-10",
-        caption: "3回目の定期演奏会です。"
-    },
-    {
-        title: "JMR合同演奏会",
-        date: "2026-03-10",
-        caption: "上智大学「上智大学ピアノの会」さん、立教大学「立教大学ピアノの会」さんとの合同演奏会です。"
-    },
     {
         title: "追い出しコンサート",
         date: "2026-03-21",
