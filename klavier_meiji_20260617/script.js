@@ -56,7 +56,7 @@ const concerts = [
       title: "明大サロン(予定)",
       date: "2026-08-08",
       caption: "LS101で行う自由な演奏会です。"
-  }
+    }
 ];
 
 const upcomingList = document.getElementById("upcoming-list");
