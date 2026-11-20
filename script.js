@@ -28,11 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // 演奏会情報
 const concerts = [
     {
-      title: "明大サロン",
-      date: "2026-08-08",
-      caption: "LS101で行う自由な演奏会です!"  
-    },
-    {
         title : "中明合同演奏会",
         date: "2026-08-27",
         caption: "中央大学のピアノサークルさんとの合同演奏会です!"
@@ -56,6 +51,11 @@ const concerts = [
         title: "定期演奏会2",
         date: "2026-12-24",
         caption: "かつしかシンフォニーヒルズで行う演奏会です!"
+    },
+    {
+        title: "JMR合同コンサート",
+        date: "2027-03-02",
+        caption: "上智、明治、立教、合同の演奏会です!"  
     }
 ];
 
